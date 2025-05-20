@@ -1,184 +1,150 @@
-@prishelets/utils
+# @prishelets/utils
 
-  
+[![npm version](https://img.shields.io/npm/v/@prishelets/utils.svg)](https://www.npmjs.com/package/@prishelets/utils)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Curslo/prishelets/ci.yml?branch=main)](https://github.com/Curslo/prishelets/actions)
+[![License](https://img.shields.io/npm/l/@prishelets/utils.svg)](https://github.com/Curslo/prishelets/blob/main/LICENSE)
 
-\[!\[npm version\](https://img.shields.io/npm/v/@prishelets/utils.svg)\](https://www.npmjs.com/package/@prishelets/utils)
+---
 
-\[!\[Build Status\](https://img.shields.io/github/actions/workflow/status/Curslo/prishelets/ci.yml?branch\=main)\](https://github.com/Curslo/prishelets/actions)
+## 📦 Description
 
-\[!\[License\](https://img.shields.io/npm/l/@prishelets/utils.svg)\](https://github.com/Curslo/prishelets/blob/main/LICENSE)
+**@prishelets/utils** is a modern, type-safe utility library for working with strings, numbers, and general data types. It’s fully typed, tested, and optimized for Node.js and TypeScript projects.
 
-  
+---
 
-\---
+## ✨ Features
 
-  
+- 🧠 Fully typed with TypeScript
+- 🧪 Tested with Jest
+- ⚡ Lightweight and modular
+- 📚 Useful for everyday string and number manipulation
+- 🔧 Tree-shakable and ESM/CommonJS compatible
 
-📦 Description
+---
 
-  
+## 📥 Installation
 
-\*\*@prishelets/utils\*\* is a modern, type-safe utility library for working with strings, numbers, and general data types. It’s fully typed, tested, and optimized for Node.js and TypeScript projects.
-
-  
-
-\---
-
-  
-
-✨ Features
-
-  
-
-\- 🧠 Fully typed with TypeScript
-
-\- 🧪 Tested with Jest
-
-\- ⚡ Lightweight and modular
-
-\- 📚 Useful for everyday string and number manipulation
-
-\- 🔧 Tree-shakable and ESM/CommonJS compatible
-
-  
-
-\---
-
-  
-
-📥 Installation
-
-  
-
+```bash
 npm install @prishelets/utils
-
-or
-
+### or
 pnpm add @prishelets/utils
-
-or
-
+### or
 yarn add @prishelets/utils
+```
 
-🚀 Usage
+---
 
-  
-  
+## 🚀 Usage
 
-import { clamp, isEven, roundTo, randomInRange } from '@prishelets/utils';
+```ts
+import { clamp, isEven, roundTo, randomInRange } from "@prishelets/utils";
+```
 
-  
-
+```ts
 clamp(5, 0, 10); // 5
-
 isEven(4); // true
-
 roundTo(3.14159, 2); // 3.14
-
 randomInRange(1, 5); // e.g., 3
+```
 
-  
+---
 
-🔢 Number Utilities
+## 🔢 Number Utilities
 
-clamp(value, min, max)
+### `clamp(value, min, max)`
 
 Clamp a number between a min and max range.
 
-  
-
+```ts
 clamp(5, 0, 10); // 5
-
 clamp(-1, 0, 10); // 0
-
 clamp(15, 0, 10); // 10
+```
 
-isEven(value)
+---
+
+### `isEven(value)`
 
 Check if a number is even.
 
-  
-
+```ts
 isEven(4); // true
-
 isEven(3); // false
+```
 
-roundTo(value, decimals)
+---
+
+### `roundTo(value, decimals)`
 
 Round a number to a specific number of decimal places.
 
-  
-
+```ts
 roundTo(3.14159, 2); // 3.14
-
 roundTo(1.005, 2); // 1.01
+```
 
-randomInRange(min, max)
+---
 
-Generate a random integer between min and max (inclusive).
+### `randomInRange(min, max)`
 
-  
+Generate a random integer between `min` and `max` (inclusive).
 
+```ts
 randomInRange(1, 3); // e.g., 2
+```
 
-  
+---
 
-🛠 Roadmap
+## 🛠 Roadmap
 
-String utilities
+- [ ] String utilities
+- [ ] Array helpers
+- [ ] Object type guards
+- [ ] Functional programming tools
+- [ ] Performance benchmarks
+- [ ] TypeScript documentation generator
 
-Array helpers
+---
 
-Object type guards
+## 📂 Project Structure
 
-Functional programming tools
-
-Performance benchmarks
-
-TypeScript documentation generator
-
-  
-
-📂 Project Structure
-
+```
 ├── src/
-
-│ └── numbers/
-
-│ ├── clamp.ts
-
-│ ├── isEven.ts
-
-│ ├── randomInRange.ts
-
-│ └── roundTo.ts
-
+│   └── numbers/
+│       ├── clamp.ts
+│       ├── isEven.ts
+│       ├── randomInRange.ts
+│       └── roundTo.ts
 ├── dist/ (compiled output)
-
 ├── .github/workflows/ (CI)
-
 └── package.json
+```
 
-  
+---
 
-🧪 Testing
+## 🧪 Testing
 
+```bash
 npm run test
+```
 
-This runs all tests via Jest. Test files are colocated with source files or kept in a \_\_tests\_\_ directory.
+This runs all tests via **Jest**. Test files are colocated with source files or kept in a `__tests__` directory.
 
-  
+---
 
-🧾 License
+## 🧾 License
 
-ISC © Curslo
+**ISC** © [Curslo](https://github.com/Curslo)
 
-  
+---
 
-💬 Feedback & Contributions
+## 💬 Feedback & Contributions
 
 Feel free to open issues or pull requests. Ideas, bug reports, and feature requests are welcome!
 
-  
+🔗 GitHub: [github.com/Curslo/prishelets](https://github.com/Curslo/prishelets)
 
-🔗 GitHub: github.com/Curslo/prishelets
+```
+
+Let me know if you would like to add badges for test coverage, bundle size, or Prettier/linting.
+```
