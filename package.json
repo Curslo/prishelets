@@ -1,0 +1,41 @@
+{
+  "name": "@prishelets/utils",
+  "version": "1.0.0",
+  "description": "A modern utility library for strings, numbers, and general data types — fully typed, tested, and built for Node.js and TypeScript.",
+  "keywords":  [
+    "typescript",
+    "nodejs",
+    "utils",
+    "utilities",
+    "string-utils",
+    "number-utils",
+    "data-utils",
+    "typescript-utilities",
+    "typed-utils",
+    "utility-library",
+    "typescript-library",
+    "node-utils",
+    "data-manipulation",
+    "string-functions",
+    "number-functions",
+    "jest-tested"
+  ],
+  "homepage": "https://github.com/Curslo/prishelets#readme",
+  "bugs": {
+    "url": "https://github.com/Curslo/prishelets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Curslo/prishelets.git"
+  },
+  "license": "ISC",
+  "author": "curslo",
+  "type": "commonjs",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
+    "prepare": "npm run build"
+  }
+}
