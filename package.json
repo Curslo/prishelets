@@ -2,7 +2,7 @@
   "name": "@prishelets/utils",
   "version": "1.0.0",
   "description": "A modern utility library for strings, numbers, and general data types — fully typed, tested, and built for Node.js and TypeScript.",
-  "keywords":  [
+  "keywords": [
     "typescript",
     "nodejs",
     "utils",
@@ -34,8 +34,11 @@
   "main": "index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.json",
     "test": "jest",
     "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
