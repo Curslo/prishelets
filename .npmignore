@@ -5,3 +5,7 @@ tsconfig.json
 tsconfig.build.json
 jest.config.js
 .gitignore
+*.test.js
+*.test.ts
+__tests__/
+dist/**/*.test.js
