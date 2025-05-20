@@ -26,9 +26,9 @@
 
 ```bash
 npm install @prishelets/utils
-### or
+# or
 pnpm add @prishelets/utils
-### or
+# or
 yarn add @prishelets/utils
 ```
 
@@ -143,8 +143,3 @@ This runs all tests via **Jest**. Test files are colocated with source files or 
 Feel free to open issues or pull requests. Ideas, bug reports, and feature requests are welcome!
 
 🔗 GitHub: [github.com/Curslo/prishelets](https://github.com/Curslo/prishelets)
-
-```
-
-Let me know if you would like to add badges for test coverage, bundle size, or Prettier/linting.
-```
