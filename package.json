@@ -1,6 +1,6 @@
 {
   "name": "@prishelets/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern utility library for strings, numbers, and general data types — fully typed, tested, and built for Node.js and TypeScript.",
   "keywords": [
     "typescript",
